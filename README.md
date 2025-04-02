@@ -136,15 +136,4 @@ By the end of this course, you will have a **real-world authentication system** 
 ✅ Deploying authentication system to production
 
 ---
-
-# **💰 Why This Course Will Sell Well?**
-
-✅ Covers **all major authentication methods** (high demand)
-
-✅ Uses **NestJS** (growing popularity in backend development)
-
-✅ Includes **real-world projects & best practices**
-
-✅ Perfect for **backend developers & security-focused engineers**
-
 Would you like help **creating slides, demo projects, or scripts** for this course? 🚀

@@ -27,21 +27,7 @@ By the end of this course, you will have a **real-world authentication system** 
 
 ---
 
-## **Module 2: Cookie-Based Authentication**
-
-🔹 What are cookies & how do they work?
-
-🔹 Implementing **cookie-based authentication** in NestJS
-
-🔹 Secure cookies: **SameSite, HttpOnly, Secure flags**
-
-🔹 Implementing **CSRF protection**
-
-🔹 Real-world example: **User login system with cookies**
-
----
-
-## **Module 3: Session-Based Authentication**
+## **Module 2: Session-Based Authentication**
 
 🔹 How session-based authentication works
 
@@ -52,6 +38,20 @@ By the end of this course, you will have a **real-world authentication system** 
 🔹 Implementing **user login & session persistence**
 
 🔹 Handling **session expiration & logout**
+
+---
+
+## **Module 3: Cookie-Based Authentication**
+
+🔹 What are cookies & how do they work?
+
+🔹 Implementing **cookie-based authentication** in NestJS
+
+🔹 Secure cookies: **SameSite, HttpOnly, Secure flags**
+
+🔹 Implementing **CSRF protection**
+
+🔹 Real-world example: **User login system with cookies**
 
 ---
 
@@ -137,3 +137,4 @@ By the end of this course, you will have a **real-world authentication system** 
 
 ---
 Would you like help **creating slides, demo projects, or scripts** for this course? 🚀
+

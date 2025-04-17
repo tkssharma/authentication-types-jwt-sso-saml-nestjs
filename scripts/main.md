@@ -4,7 +4,7 @@
 
 ---
 
-### ✅ **Video 1: Setup & Docker Compose — Postgres + Redis + NestJS**
+### ✅ Setup & Docker Compose — Postgres + Redis + NestJS**
 
 **Title:**  
 🚀 _"NestJS Auth Setup with Docker: PostgreSQL & Redis for Sessions"_

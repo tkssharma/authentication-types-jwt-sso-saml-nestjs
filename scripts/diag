@@ -1,0 +1,31 @@
+sequenceDiagram
+    participant Client as Client (Browser)
+    participant Server as NestJS App
+    participant DB as Database
+    participant Controller as AuthController
+    participant Service as AuthService
+    participant Middleware as cookie-parser
+    participant Guard as CookieAuthGuard
+    participant UserController as UserController
+    participant UserService as UserService
+
+    %% Login Flow
+    Client->>Server: POST /auth/login (username, password)
+    Server->>Controller: AuthController.login()
+    Controller->>Service: AuthService.validateUser(username, password)
+    Service->>DB: Find user by username
+    DB->>Service: Return user data
+    Service->>Controller: Return validated user
+    Controller->>Server: Set-Cookie: auth_user=signed_user_id HttpOnly Secure SameSite=Lax
+    Server->>Client: 200 OK + Set-Cookie header
+
+    %% Protected Route Flow
+    Client->>Server: GET /profile (Cookie: auth_user=signed_user_id)
+    Server->>Middleware: cookie-parser (reads signed cookie)
+    Middleware->>Guard: Checks if auth_user exists in signedCookies
+    Guard->>Controller: If valid, proceeds to Controller
+    Controller->>UserService: UserService.findById(auth_user)
+    UserService->>DB: Query user info by user_id
+    DB->>UserService: Return user data
+    UserService->>Controller: Return user data
+    Controller->>Client: Response with user data or resource

@@ -7,7 +7,6 @@ import {
   PrimaryGeneratedColumn,
   OneToMany,
 } from "typeorm";
-import { UserAddressEntity } from "./user.address.entity";
 
 @Entity("users")
 export class UserEntity extends BaseEntity {

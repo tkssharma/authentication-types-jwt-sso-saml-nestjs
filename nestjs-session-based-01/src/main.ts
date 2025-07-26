@@ -19,7 +19,7 @@ async function bootstrap() {
   // Set up express-session
   app.use(
     session({
-      // store,
+      store,
       secret: process.env.SESSION_SECRET || 'keyboard cat',
       resave: false,
       saveUninitialized: false,
